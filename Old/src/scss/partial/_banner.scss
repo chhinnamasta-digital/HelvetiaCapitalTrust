@@ -1,0 +1,46 @@
+.bannerWrap{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #545454;
+    min-height: 546px;
+    max-height: 750px;
+    position: relative;
+    overflow: hidden;
+    .container{
+        position: relative;  
+        .bannerItems{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            &:nth-of-type(1){
+                display: block;
+            }
+                                     
+            @include min-max(0px, 767px){        
+                position: relative;
+            }
+        } 
+        .active{
+            position: relative;
+            display: block;
+        }     
+        .row{
+            align-items: center;
+        }
+        .bannerTextBlock{
+            padding: 0 15px;
+            @include min-max(0px, 767px){        
+               padding: 0;
+            }
+        }
+        .bannerImgBlock{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    margin-bottom: 40px;
+}

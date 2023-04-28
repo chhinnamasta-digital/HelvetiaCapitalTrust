@@ -1,0 +1,124 @@
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: $colorBlack;
+    background: #EAE0D6;
+    // position: fixed;
+    // width: 100%;
+    // height: 100%;
+    // top: 0;
+    // left: 0;
+    // border: 1px solid #ff0000;
+    // overflow: hidden;
+    // overflow-y: auto;
+}
+img{
+    padding: 1rem 0;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
+    // height: 100%;
+    @include min-max(0px, 767px){
+        display: block;
+    }
+}
+h1{
+    font-family: $RobotoSlab;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    // line-height: 127px;    
+    color: #000000;
+    margin-bottom: 40px;
+    @include min-max(0px, 767px){
+        font-size: 35px;
+        margin-bottom: 20px;
+        margin-top: 25px;
+        // span{
+        //     display: inline-block !important;
+        //     padding-left: 10px;
+        // }
+    }
+    span{
+        display: block;
+    }
+}
+h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    // line-height: 44px;    
+    color: #545454;
+    margin-bottom: 40px;
+    line-height: 139.52%;
+    span{
+        display: block;
+    }
+    
+    @include min-max(0px, 767px){
+        font-size: 18px;
+        margin-bottom: 10px;
+        span{
+            display: inline-block;
+        }
+        font-size: 20px;
+    }
+}
+p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 65px;
+    @include min-max(0px, 767px){
+        font-size: 20px;
+        margin-bottom: 20px;
+        span{
+            display: inline-block;
+        }
+    }
+    span{
+        display: block;
+    }
+}
+.bodyTextBlock{
+    margin-top: 50px;
+    padding-top: 50px;
+    @include min-max(0px, 767px){        
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    h1{
+        
+    }
+    h3{
+        
+    }
+}
+.leftBlock{
+    p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        
+        @include min-max(0px, 767px){
+            font-size: 20px;
+            span{
+                display: inline-block;
+            }
+        }
+    }
+}
+.rightBlock{
+    
+}
+.textContent{
+
+}
